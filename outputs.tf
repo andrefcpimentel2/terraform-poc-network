@@ -1,4 +1,4 @@
-output "Welcome_Message" {
+output "aWelcome_Message" {
   value = <<SHELLCOMMANDS
 
 ooooo   ooooo                    oooo         o8o    .oooooo.
@@ -23,3 +23,8 @@ output "VPC" {
 output "public_subnet" {
   value       = aws_subnet.poc_subnet.id
 }
+
+output "iam_role" {
+  value       = aws_iam_instance_profile.poc.name
+}
+
